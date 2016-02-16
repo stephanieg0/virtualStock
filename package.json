@@ -1,0 +1,42 @@
+{
+  "name": "y",
+  "version": "1.0.0",
+  "description": "virtual stock game",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stephanieg0/virtualStock.git"
+  },
+  "eslintConfig": {
+    "env": {
+      "mocha": true,
+      "node": true,
+      "es6": true,
+      "jquery": true
+    },
+    "extends": "eslint:recommended",
+    "rules": {
+      "no-console": 0
+    }
+  },
+  "author": "Stephanie Goldstein <stephanie.miranda.valdez@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/stephanieg0/virtualStock/issues"
+  },
+  "homepage": "https://github.com/stephanieg0/virtualStock#readme",
+  "dependencies": {
+    "body-parser": "^1.15.0",
+    "express": "^4.13.4",
+    "jade": "^1.11.0",
+    "request": "^2.69.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.8.1"
+  }
+}
