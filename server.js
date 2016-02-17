@@ -16,7 +16,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 //use routes
-app.use(routes);
+app.use('/', routes);
 
 app.listen(PORT, () => {
   console.log(`Node.js server started. Listening on port ${PORT}`);
