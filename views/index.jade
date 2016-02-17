@@ -2,3 +2,10 @@ extends ./layout.jade
 
 block content
   h1 Virtual Stock
+  .container
+    h1 Get a quote
+    form(method='POST')
+      .form-group
+        input(type='text' name='symbolInput' placeholder='Enter company symbol')#input-field
+        input(type='submit', name='Get')#get-quote-button
+

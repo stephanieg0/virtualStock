@@ -1,12 +1,11 @@
 extends ./layout.jade
 
 block content
-  input(type='text')
-  button#get-quote-button Get
-  h1 #{quote.Name}
-  h1 #{quote.Symbol}
-  h2 Last Price: #{quote.LastPrice}
-  h2 High: #{quote.High}
-  h2 Low: #{quote.Low}
-  script(src='/vendor/jquery/dist/jquery.min.js')
-  script(src='/javascript/app.js')
+    nav
+      a home
+    .quotes
+      h1 #{quote.Name}
+      h1 #{quote.Symbol}
+      h2 Last Price: #{quote.LastPrice}
+      h2 High: #{quote.High}
+      h2 Low: #{quote.Low}
